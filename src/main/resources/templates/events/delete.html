@@ -8,12 +8,13 @@
 <form method="post">
 
   <th:block th:each="event : ${events}">
-    <div class="form-group">
-      <label>
+    <div class="form-check">
+      <label class ="form-check-label">
         <span th:text="${event.name}"></span>
-        <input type="checkbox" name="eventIds" th:value="${event.id}" class="form-control">
+        <input type="checkbox" name="eventIds" th:value="${event.id}" class="form-check-input">
       </label>
     </div>
+    <br>
   </th:block>
 
   <input type="submit" value="Delete" class="btn btn-danger">
