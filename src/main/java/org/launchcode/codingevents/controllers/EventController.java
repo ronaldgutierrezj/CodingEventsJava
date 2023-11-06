@@ -16,9 +16,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-/**
- * Created by Chris Bay
- */
+
+
 @Controller
 @RequestMapping("events")
 public class EventController {
